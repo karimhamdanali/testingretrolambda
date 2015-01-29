@@ -1,0 +1,339 @@
+Classfile /Users/karim/Desktop/testingretrolambda/Main.class
+  Last modified Jan 29, 2015; size 2404 bytes
+  MD5 checksum 745bfc0e9c9d9678b7a48492a0f0148a
+  Compiled from "Main.java"
+public class testingretrolambda.Main
+  minor version: 0
+  major version: 50
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Utf8               testingretrolambda/Main
+    #2 = Class              #1            // testingretrolambda/Main
+    #3 = Utf8               java/lang/Object
+    #4 = Class              #3            // java/lang/Object
+    #5 = Utf8               Main.java
+    #6 = Utf8               java/lang/invoke/MethodHandles$Lookup
+    #7 = Class              #6            // java/lang/invoke/MethodHandles$Lookup
+    #8 = Utf8               java/lang/invoke/MethodHandles
+    #9 = Class              #8            // java/lang/invoke/MethodHandles
+   #10 = Utf8               Lookup
+   #11 = Utf8               <init>
+   #12 = Utf8               ()V
+   #13 = NameAndType        #11:#12       // "<init>":()V
+   #14 = Methodref          #4.#13        // java/lang/Object."<init>":()V
+   #15 = Utf8               this
+   #16 = Utf8               Ltestingretrolambda/Main;
+   #17 = Utf8               main
+   #18 = Utf8               ([Ljava/lang/String;)V
+   #19 = Utf8               java/lang/Integer
+   #20 = Class              #19           // java/lang/Integer
+   #21 = Utf8               valueOf
+   #22 = Utf8               (I)Ljava/lang/Integer;
+   #23 = NameAndType        #21:#22       // valueOf:(I)Ljava/lang/Integer;
+   #24 = Methodref          #20.#23       // java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+   #25 = Utf8               java/util/Arrays
+   #26 = Class              #25           // java/util/Arrays
+   #27 = Utf8               asList
+   #28 = Utf8               ([Ljava/lang/Object;)Ljava/util/List;
+   #29 = NameAndType        #27:#28       // asList:([Ljava/lang/Object;)Ljava/util/List;
+   #30 = Methodref          #26.#29       // java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+   #31 = Utf8               java/util/List
+   #32 = Class              #31           // java/util/List
+   #33 = Utf8               java/lang/System
+   #34 = Class              #33           // java/lang/System
+   #35 = Utf8               out
+   #36 = Utf8               Ljava/io/PrintStream;
+   #37 = NameAndType        #35:#36       // out:Ljava/io/PrintStream;
+   #38 = Fieldref           #34.#37       // java/lang/System.out:Ljava/io/PrintStream;
+   #39 = Utf8               testingretrolambda/Main$$Lambda$1
+   #40 = Class              #39           // testingretrolambda/Main$$Lambda$1
+   #41 = Utf8               lambdaFactory$
+   #42 = Utf8               (Ljava/io/PrintStream;)Ljava/util/function/Consumer;
+   #43 = NameAndType        #41:#42       // lambdaFactory$:(Ljava/io/PrintStream;)Ljava/util/function/Consumer;
+   #44 = Methodref          #40.#43       // testingretrolambda/Main$$Lambda$1.lambdaFactory$:(Ljava/io/PrintStream;)Ljava/util/function/Consumer;
+   #45 = Utf8               forEach
+   #46 = Utf8               (Ljava/util/function/Consumer;)V
+   #47 = NameAndType        #45:#46       // forEach:(Ljava/util/function/Consumer;)V
+   #48 = InterfaceMethodref #32.#47       // java/util/List.forEach:(Ljava/util/function/Consumer;)V
+   #49 = Utf8               testingretrolambda/Main$$Lambda$2
+   #50 = Class              #49           // testingretrolambda/Main$$Lambda$2
+   #51 = Utf8               (I)Ljava/util/function/Consumer;
+   #52 = NameAndType        #41:#51       // lambdaFactory$:(I)Ljava/util/function/Consumer;
+   #53 = Methodref          #50.#52       // testingretrolambda/Main$$Lambda$2.lambdaFactory$:(I)Ljava/util/function/Consumer;
+   #54 = Utf8               stream
+   #55 = Utf8               ()Ljava/util/stream/Stream;
+   #56 = NameAndType        #54:#55       // stream:()Ljava/util/stream/Stream;
+   #57 = InterfaceMethodref #32.#56       // java/util/List.stream:()Ljava/util/stream/Stream;
+   #58 = Utf8               testingretrolambda/Main$$Lambda$3
+   #59 = Class              #58           // testingretrolambda/Main$$Lambda$3
+   #60 = Utf8               ()Ljava/util/function/Predicate;
+   #61 = NameAndType        #41:#60       // lambdaFactory$:()Ljava/util/function/Predicate;
+   #62 = Methodref          #59.#61       // testingretrolambda/Main$$Lambda$3.lambdaFactory$:()Ljava/util/function/Predicate;
+   #63 = Utf8               java/util/stream/Stream
+   #64 = Class              #63           // java/util/stream/Stream
+   #65 = Utf8               filter
+   #66 = Utf8               (Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #67 = NameAndType        #65:#66       // filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #68 = InterfaceMethodref #64.#67       // java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+   #69 = Utf8               java/util/stream/Collectors
+   #70 = Class              #69           // java/util/stream/Collectors
+   #71 = Utf8               toList
+   #72 = Utf8               ()Ljava/util/stream/Collector;
+   #73 = NameAndType        #71:#72       // toList:()Ljava/util/stream/Collector;
+   #74 = Methodref          #70.#73       // java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+   #75 = Utf8               collect
+   #76 = Utf8               (Ljava/util/stream/Collector;)Ljava/lang/Object;
+   #77 = NameAndType        #75:#76       // collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+   #78 = InterfaceMethodref #64.#77       // java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+   #79 = Utf8               java/io/PrintStream
+   #80 = Class              #79           // java/io/PrintStream
+   #81 = Utf8               println
+   #82 = Utf8               (Ljava/lang/Object;)V
+   #83 = NameAndType        #81:#82       // println:(Ljava/lang/Object;)V
+   #84 = Methodref          #80.#83       // java/io/PrintStream.println:(Ljava/lang/Object;)V
+   #85 = Utf8               args
+   #86 = Utf8               [Ljava/lang/String;
+   #87 = Utf8               list
+   #88 = Utf8               Ljava/util/List<Ljava/lang/Integer;>;
+   #89 = Utf8               Ljava/util/List;
+   #90 = Utf8               dlist
+   #91 = Utf8               Ljava/util/List<Ljava/util/List<Ljava/lang/Integer;>;>;
+   #92 = Utf8               a
+   #93 = Utf8               I
+   #94 = Utf8               lambda$0
+   #95 = Utf8               (ILjava/lang/Integer;)V
+   #96 = Utf8               intValue
+   #97 = Utf8               ()I
+   #98 = NameAndType        #96:#97       // intValue:()I
+   #99 = Methodref          #20.#98       // java/lang/Integer.intValue:()I
+  #100 = Utf8               (I)V
+  #101 = NameAndType        #81:#100      // println:(I)V
+  #102 = Methodref          #80.#101      // java/io/PrintStream.println:(I)V
+  #103 = Utf8               n
+  #104 = Utf8               Ljava/lang/Integer;
+  #105 = Utf8               lambda$1
+  #106 = Utf8               (Ljava/lang/Integer;)Z
+  #107 = Utf8               m
+  #108 = Utf8               access$lambda$0
+  #109 = NameAndType        #94:#95       // lambda$0:(ILjava/lang/Integer;)V
+  #110 = Methodref          #2.#109       // testingretrolambda/Main.lambda$0:(ILjava/lang/Integer;)V
+  #111 = Utf8               access$lambda$1
+  #112 = NameAndType        #105:#106     // lambda$1:(Ljava/lang/Integer;)Z
+  #113 = Methodref          #2.#112       // testingretrolambda/Main.lambda$1:(Ljava/lang/Integer;)Z
+  #114 = Utf8               Code
+  #115 = Utf8               LocalVariableTable
+  #116 = Utf8               LineNumberTable
+  #117 = Utf8               LocalVariableTypeTable
+  #118 = Utf8               StackMapTable
+  #119 = Utf8               SourceFile
+  #120 = Utf8               InnerClasses
+{
+  public testingretrolambda.Main();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #14                 // Method java/lang/Object."<init>":()V
+         4: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Ltestingretrolambda/Main;
+      LineNumberTable:
+        line 7: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=7, locals=4, args_size=1
+         0: iconst_5
+         1: anewarray     #20                 // class java/lang/Integer
+         4: dup
+         5: iconst_0
+         6: iconst_1
+         7: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        10: aastore
+        11: dup
+        12: iconst_1
+        13: iconst_2
+        14: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        17: aastore
+        18: dup
+        19: iconst_2
+        20: iconst_3
+        21: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        24: aastore
+        25: dup
+        26: iconst_3
+        27: iconst_4
+        28: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        31: aastore
+        32: dup
+        33: iconst_4
+        34: iconst_5
+        35: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        38: aastore
+        39: invokestatic  #30                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+        42: astore_1
+        43: iconst_3
+        44: anewarray     #32                 // class java/util/List
+        47: dup
+        48: iconst_0
+        49: iconst_5
+        50: anewarray     #20                 // class java/lang/Integer
+        53: dup
+        54: iconst_0
+        55: iconst_1
+        56: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        59: aastore
+        60: dup
+        61: iconst_1
+        62: iconst_2
+        63: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        66: aastore
+        67: dup
+        68: iconst_2
+        69: iconst_3
+        70: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        73: aastore
+        74: dup
+        75: iconst_3
+        76: iconst_4
+        77: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        80: aastore
+        81: dup
+        82: iconst_4
+        83: iconst_5
+        84: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+        87: aastore
+        88: invokestatic  #30                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+        91: aastore
+        92: dup
+        93: iconst_1
+        94: iconst_5
+        95: anewarray     #20                 // class java/lang/Integer
+        98: dup
+        99: iconst_0
+       100: iconst_1
+       101: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       104: aastore
+       105: dup
+       106: iconst_1
+       107: iconst_2
+       108: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       111: aastore
+       112: dup
+       113: iconst_2
+       114: iconst_3
+       115: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       118: aastore
+       119: dup
+       120: iconst_3
+       121: iconst_4
+       122: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       125: aastore
+       126: dup
+       127: iconst_4
+       128: iconst_5
+       129: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       132: aastore
+       133: invokestatic  #30                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       136: aastore
+       137: dup
+       138: iconst_2
+       139: iconst_5
+       140: anewarray     #20                 // class java/lang/Integer
+       143: dup
+       144: iconst_0
+       145: iconst_1
+       146: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       149: aastore
+       150: dup
+       151: iconst_1
+       152: iconst_2
+       153: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       156: aastore
+       157: dup
+       158: iconst_2
+       159: iconst_3
+       160: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       163: aastore
+       164: dup
+       165: iconst_3
+       166: iconst_4
+       167: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       170: aastore
+       171: dup
+       172: iconst_4
+       173: iconst_5
+       174: invokestatic  #24                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+       177: aastore
+       178: invokestatic  #30                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       181: aastore
+       182: invokestatic  #30                 // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+       185: astore_2
+       186: bipush        10
+       188: istore_3
+       189: aload_1
+       190: getstatic     #38                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       193: invokestatic  #44                 // Method testingretrolambda/Main$$Lambda$1.lambdaFactory$:(Ljava/io/PrintStream;)Ljava/util/function/Consumer;
+       196: invokeinterface #48,  2           // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+       201: aload_1
+       202: iload_3
+       203: invokestatic  #53                 // Method testingretrolambda/Main$$Lambda$2.lambdaFactory$:(I)Ljava/util/function/Consumer;
+       206: invokeinterface #48,  2           // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+       211: getstatic     #38                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       214: aload_1
+       215: invokeinterface #57,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+       220: invokestatic  #62                 // Method testingretrolambda/Main$$Lambda$3.lambdaFactory$:()Ljava/util/function/Predicate;
+       223: invokeinterface #68,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+       228: invokestatic  #74                 // Method java/util/stream/Collectors.toList:()Ljava/util/stream/Collector;
+       231: invokeinterface #78,  2           // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+       236: invokevirtual #84                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+       239: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     240     0  args   [Ljava/lang/String;
+           43     197     1  list   Ljava/util/List;
+          186      54     2 dlist   Ljava/util/List;
+          189      51     3     a   I
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+           43     197     1  list   Ljava/util/List<Ljava/lang/Integer;>;
+          186      54     2 dlist   Ljava/util/List<Ljava/util/List<Ljava/lang/Integer;>;>;
+      LineNumberTable:
+        line 11: 0
+        line 12: 43
+        line 12: 55
+        line 13: 100
+        line 15: 186
+        line 19: 189
+        line 20: 201
+        line 22: 211
+        line 23: 228
+        line 22: 236
+        line 25: 239
+
+  static void access$lambda$0(int, java.lang.Integer);
+    descriptor: (ILjava/lang/Integer;)V
+    flags: ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: iload_0
+         1: aload_1
+         2: invokestatic  #110                // Method lambda$0:(ILjava/lang/Integer;)V
+         5: return
+
+  static boolean access$lambda$1(java.lang.Integer);
+    descriptor: (Ljava/lang/Integer;)Z
+    flags: ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokestatic  #113                // Method lambda$1:(Ljava/lang/Integer;)Z
+         4: ireturn
+}
+SourceFile: "Main.java"
+InnerClasses:
+     public static final #10= #7 of #9; //Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
