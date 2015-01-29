@@ -1,0 +1,16 @@
+unknown: -1 :: testingretrolambda.Main$$Lambda$1: lambdaFactory$(Ljava/io/PrintStream;) ===> testingretrolambda.Main$$Lambda$1: <init>(Ljava/io/PrintStream;)
+unknown: -1 :: testingretrolambda.Main$$Lambda$2: accept(Ljava/lang/Object;) ===> testingretrolambda.Main: access$lambda$0(ILjava/lang/Integer;)
+unknown: -1 :: testingretrolambda.Main$$Lambda$2: lambdaFactory$(I) ===> testingretrolambda.Main$$Lambda$2: <init>(I)
+unknown: -1 :: testingretrolambda.Main$$Lambda$3: <clinit>() ===> testingretrolambda.Main$$Lambda$3: <init>()
+unknown: -1 :: testingretrolambda.Main$$Lambda$3: test(Ljava/lang/Object;) ===> testingretrolambda.Main: access$lambda$1(Ljava/lang/Integer;)
+
+unknown: -1 :: testingretrolambda.Main: access$lambda$0(ILjava/lang/Integer;) ===> testingretrolambda.Main: lambda$0(ILjava/lang/Integer;)
+unknown: -1 :: testingretrolambda.Main: access$lambda$1(Ljava/lang/Integer;) ===> testingretrolambda.Main: lambda$1(Ljava/lang/Integer;)
+
+unknown: -1 :: testingretrolambda.Main: main([Ljava/lang/String;) ===> testingretrolambda.Main$$Lambda$1: accept(Ljava/lang/Object;)
+unknown: -1 :: testingretrolambda.Main: main([Ljava/lang/String;) ===> testingretrolambda.Main$$Lambda$1: lambdaFactory$(Ljava/io/PrintStream;)
+unknown: -1 :: testingretrolambda.Main: main([Ljava/lang/String;) ===> testingretrolambda.Main$$Lambda$2: accept(Ljava/lang/Object;)
+unknown: -1 :: testingretrolambda.Main: main([Ljava/lang/String;) ===> testingretrolambda.Main$$Lambda$2: lambdaFactory$(I)
+unknown: -1 :: testingretrolambda.Main: main([Ljava/lang/String;) ===> testingretrolambda.Main$$Lambda$3: <clinit>()
+unknown: -1 :: testingretrolambda.Main: main([Ljava/lang/String;) ===> testingretrolambda.Main$$Lambda$3: lambdaFactory$()
+unknown: -1 :: testingretrolambda.Main: main([Ljava/lang/String;) ===> testingretrolambda.Main$$Lambda$3: test(Ljava/lang/Object;)

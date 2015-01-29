@@ -1,0 +1,21 @@
+static call graph info
+----------------------
+nodes static = 17
+edges static = 19
+
+dynamic call graph info
+-----------------------
+nodes dynamic = 2
+edges dynamic = 15
+
+call graph soundness
+--------------------
+nodes unsound = 0
+edges unsound = 1
+
+call graph precision
+--------------------
+nodes imprecise = 15
+edges imprecise = 5
+
+
